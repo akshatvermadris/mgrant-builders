@@ -19,6 +19,7 @@ assets/logo.svg            Favicon
    Set `data-page="session-2.html"` on `<body>`.
 2. In `assets/sessions.js`, update the session 2 entry: title, date, summary and tags,
    then set `status: 'done'`. Move `latest: true` from session 1 to session 2.
+   Add `recording: '<Stream link>'` to show the Watch buttons.
 3. Commit and push. The sidebar, home page, All Sessions page and prev/next links
    update automatically.
 

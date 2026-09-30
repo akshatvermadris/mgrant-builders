@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
-<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/style.css?v=3">
 </head>
 <body data-root="../" data-page="session-1.html" data-toc>
 
@@ -24,6 +24,7 @@
   <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="index.html">Sessions</a> / Session 1</div>
   <h1>Tech Fundamentals: the Terminal, Vibe Coding &amp; the Three Layers<span>.</span></h1>
   <div class="page-meta">Session 1 &middot; Wednesday, 30 September 2026 &middot; 11:07 AM &middot; 52 min</div>
+  <a class="watch-btn" href="https://dhwaniris1-my.sharepoint.com/personal/nandita_sharma_dhwaniris_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fnandita%5Fsharma%5Fdhwaniris%5Fcom%2FDocuments%2FRecordings%2FmGrant%20Builders%20%20Tech%20Fundamentals%20Session%2D20260930%5F110716%2DMeeting%20Recording%2Emp4&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview%2Eb402aeb9%2Db54e%2D4538%2Db8fb%2D16d507f40eaf" target="_blank" rel="noopener"><span>&#9654;</span> Watch the recording</a>
   <p class="page-lede">This session covers the basic tech every product builder needs: how mGrant is put together and how to talk to developers clearly. The goal is simple. You should be able to understand what you're building, ask the right questions, and hand work to developers without it getting lost along the way.</p>
 </div>
 
@@ -343,56 +344,23 @@
 </section>
 
 <!-- TRANSCRIPT -->
-<section id="transcript" data-nav="Session script">
-  <h2>The Session in 5 Minutes <span class="badge">Short script</span></h2>
-  <div class="prose"><p>A short, cleaned-up version of the conversation, translated into English. It's paraphrased, so <a class="inline-link" href="#recording">watch the recording</a> for the exact words.</p></div>
+<section id="transcript" data-nav="Session in 1 minute">
+  <h2>The Session in 1 Minute</h2>
+  <div class="prose"><p>Six questions from the session, each with a plain answer. The details are in the recording.</p></div>
 
-  <div class="script">
-    <div class="sc-chapter"><span class="sc-n">1</span> The many hats</div>
-    <div class="sc-line lead"><b>Lead</b><p>An analyst's day used to be calls, MoMs, tickets and timelines. Now you're also gathering requirements, designing, wireframing, developing, documenting and presenting to clients. What have I missed?</p></div>
-    <div class="sc-line"><b>Room</b><p>Testing. Data engineering. Developing features.</p></div>
-    <div class="sc-line lead"><b>Lead</b><p>Right. Requirement gathering, design and development are three separate skills. Most of you do 8 or 9 of these, and many of you do all 10.</p></div>
-
-    <div class="sc-chapter"><span class="sc-n">2</span> The medium</div>
-    <div class="sc-line lead"><b>Lead</b><p>Design used to mean Figma and engineering meant VS Code. The medium has changed; the skill hasn't. So what's your medium now? Don't say "Claude".</p></div>
-    <div class="sc-line"><b>Room</b><p>The CLI, the command line interface. Instead of clicking around a GUI, you type commands and see the result.</p></div>
-    <div class="sc-line lead"><b>Lead</b><p>Take it back to the root: it's the <strong>terminal</strong>. Early computers only had a terminal. Then we got click-screens, then phones. When AI arrived, clicking became expensive, because it has to see, find, then click. So we all went back to the terminal. The difference now is that AI speaks the terminal's language and we speak English to the AI.</p></div>
-    <div class="sc-line lead"><b>Lead</b><p>CLI is a <em>capability</em>: "Slack CLI" or "Notion CLI" just means those tools respond to the terminal. Not comfortable in the terminal yet? Use Cowork, which is a UI on top of it.</p></div>
-
-    <div class="sc-chapter"><span class="sc-n">3</span> Vibe coding vs AI-assisted engineering</div>
-    <div class="sc-line lead"><b>Lead</b><p>If someone says you're vibe coding, the answer is no, you're not. If you are, you're doing it wrong. So what's the difference?</p></div>
-    <div class="sc-line"><b>Room</b><p>In vibe coding you don't really know how to code; you go with the flow. In assisted coding you know what needs doing, and you give the AI your own rules for security, fewer tokens and better efficiency.</p></div>
-    <div class="sc-line lead"><b>Lead</b><p>"This dashboard card doesn't look nice" is vibe coding. "The count on this card must show with commas" is AI-assisted engineering. So is "take the palette from this website, apply it, and show me first." Leaders can vibe code because they're imprinting years of experience. We can't.</p></div>
-    <div class="sc-line"><b>Room</b><p>The weaknesses are hallucination, wasted tokens and more of our time. You also don't know which technical route it took, and it brings security and compliance risks.</p></div>
-    <div class="sc-line lead"><b>Lead</b><p>All of that adds up to bad code. And a token is a made-up billing unit, roughly a word. It's what your 5-hour and weekly limits count.</p></div>
-
-    <div class="sc-chapter"><span class="sc-n">4</span> Rules &amp; patterns</div>
-    <div class="sc-line lead"><b>Lead</b><p>Good code isn't one person's vibe. A senior engineer knows a <strong>pattern</strong>. Learn it from them, and put it both in your model and in your own memory so each can check the other.</p></div>
-    <div class="sc-line lead"><b>Lead</b><p>Example: form field config lives in code and must not be overwritten on every release. Make that a core rule and it stops happening. Everyone should have their own rules, so change the conversation from "give me your rules" to "here's my rule, what's yours?"</p></div>
-
-    <div class="sc-chapter"><span class="sc-n">5</span> The three layers</div>
-    <div class="sc-line lead"><b>Lead</b><p>Technology isn't only digital. It's a way of doing things, even how someone parks a car. Digital technology, though, always has three layers. Any guesses?</p></div>
-    <div class="sc-line"><b>Room</b><p>Code, infra… security? UI? Config?</p></div>
-    <div class="sc-line lead"><b>Lead</b><p>UI and config are code. Security is infra. The missing one is <strong>data</strong>. Data, code and infra are three separate professions, and you're doing all three.</p></div>
-    <div class="sc-line"><b>Room</b><p>Data is information and values. Code is the instructions for how to work.</p></div>
-    <div class="sc-line lead"><b>Lead</b><p>Yes. <strong>Code is capability; data is the repository.</strong> In a house, the utensils and microwave are code and the food is data. Frappe fixtures sit in the DB, but they're code, because they define a form.</p></div>
-    <div class="sc-line"><b>Room</b><p>So infra is the structure of the house.</p></div>
-    <div class="sc-line lead"><b>Lead</b><p>Exactly, and the structure has to fit the capability. Storing photos in the DB without S3 is putting the fridge on a table. One day the table breaks.</p></div>
-
-    <div class="sc-chapter"><span class="sc-n">6</span> Deduction</div>
-    <div class="sc-line lead"><b>Lead</b><p>Half our time goes into working out which layer an issue is in. Say I'm the client and I tell you "my Output table isn't working." What do you ask me?</p></div>
-    <div class="sc-line"><b>Room</b><p>Was it working before? Did a new release or migration go out?</p></div>
-    <div class="sc-line lead"><b>Lead</b><p>That's history, and it's a good question. Then ask three more: <strong>Can you see the other tables? Can you see this table in other projects? Are the numbers what they should be?</strong> The answers point to infra, code and data, in that order.</p></div>
-    <div class="sc-line lead"><b>Lead</b><p>People call something an infra issue when every other table works fine. That's why deduction matters: classify first, then fix. Go practise this with your AI.</p></div>
-
-    <div class="sc-chapter"><span class="sc-n">&rarr;</span> Wrap-up</div>
-    <div class="sc-line lead"><b>Lead</b><p>More sessions are coming: design, testing, docs, marketing and BD, plus debates. Send ideas to Nandita. Take this recording, feed it to your AI, and argue with it.</p></div>
+  <div class="qa-list">
+    <div class="qa"><span class="qa-n">1</span><div><div class="qa-q">What is our working medium now?</div><div class="qa-a">The <strong>terminal</strong>. Tools like Claude run inside it. The tool changed, but the skill is still yours.</div></div></div>
+    <div class="qa"><span class="qa-n">2</span><div><div class="qa-q">Are we "vibe coding"?</div><div class="qa-a">No. Don't say "make it look nice". Say <strong>what to change, where, and "show me first"</strong>.</div></div></div>
+    <div class="qa"><span class="qa-n">3</span><div><div class="qa-q">What is good code?</div><div class="qa-a">Patterns you learn from seniors and <strong>write down as your own rules</strong>, so you and your AI both follow them.</div></div></div>
+    <div class="qa"><span class="qa-n">4</span><div><div class="qa-q">What is any digital system made of?</div><div class="qa-a">Three layers: <strong>Data</strong> is the food, <strong>Code</strong> is the kitchen tools, and <strong>Infra</strong> is the house.</div></div></div>
+    <div class="qa"><span class="qa-n">5</span><div><div class="qa-q">A bug comes in. What do I do first?</div><div class="qa-a">Find its layer. Do other tables load? If not, it's <strong>infra</strong>. Does this table work in other projects? If not, it's <strong>code</strong>. Are the numbers right? If not, it's <strong>data</strong>.</div></div></div>
+    <div class="qa"><span class="qa-n">6</span><div><div class="qa-q">What should I do now?</div><div class="qa-a">Watch the recording, practise naming the layer on real issues, and send session ideas to Nandita.</div></div></div>
   </div>
 
   <a class="rec-banner" href="https://dhwaniris1-my.sharepoint.com/personal/nandita_sharma_dhwaniris_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fnandita%5Fsharma%5Fdhwaniris%5Fcom%2FDocuments%2FRecordings%2FmGrant%20Builders%20%20Tech%20Fundamentals%20Session%2D20260930%5F110716%2DMeeting%20Recording%2Emp4&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview%2Eb402aeb9%2Db54e%2D4538%2Db8fb%2D16d507f40eaf" target="_blank" rel="noopener" style="margin-top:18px">
     <span class="rec-play">&#9654;</span>
-    <span class="rec-body"><span class="rec-label">Full recording &middot; 52 min</span><span class="rec-title">Watch the whole session on Microsoft Stream</span></span>
-    <span class="rec-cta">Open &rarr;</span>
+    <span class="rec-body"><span class="rec-label">Full recording &middot; 52 min</span><span class="rec-title">Watch the whole session</span><span class="rec-note">Microsoft Stream &middot; sign in with your Dhwani account</span></span>
+    <span class="rec-cta">Watch &rarr;</span>
   </a>
 </section>
 
@@ -617,7 +585,7 @@
 
 })();
 </script>
-<script src="../assets/sessions.js"></script>
-<script src="../assets/site.js"></script>
+<script src="../assets/sessions.js?v=3"></script>
+<script src="../assets/site.js?v=3"></script>
 </body>
 </html>

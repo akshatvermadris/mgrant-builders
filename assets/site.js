@@ -47,6 +47,11 @@
   });
   html += '</div></details>';
 
+  var cur = S.filter(function (s) { return s.slug === PAGE; })[0];
+  if (cur && cur.recording) {
+    html += '<div class="sidebar-section"><a class="sidebar-link rec-link" href="' + esc(cur.recording) + '" target="_blank" rel="noopener"><span class="link-icon">&#9654;</span> Watch recording</a></div>';
+  }
+
   if (body.hasAttribute('data-toc')) {
     var secs = document.querySelectorAll('section[id]');
     if (secs.length) {
@@ -108,7 +113,8 @@
   if (lb && latest) {
     lb.innerHTML = '<div class="home-last-label">Latest &middot; ' + esc(latest.date) + '</div>' +
       '<p class="home-last-text"><strong>Session ' + latest.num + ': ' + esc(latest.short) + '.</strong> ' + esc(latest.summary) + '</p>' +
-      '<a class="home-last-cta" href="' + href(latest) + '">Read the session &rarr;</a>';
+      '<a class="home-last-cta" href="' + href(latest) + '">Read the session &rarr;</a>' +
+      (latest.recording ? '<a class="home-last-cta" href="' + esc(latest.recording) + '" target="_blank" rel="noopener">&#9654; Watch</a>' : '');
   }
 
   var grid = document.getElementById('sessionGrid');
@@ -121,6 +127,7 @@
         (s.latest ? '<span class="sc-badge">Latest</span>' : '') + '</div>' +
         '<h3>' + esc(s.title) + '</h3><p>' + esc(s.summary) + '</p>' +
         '<div class="sc-tags">' + (s.tags || []).map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('') + '</div>' +
+        (s.recording ? '<div class="sc-rec">&#9654; Recording available</div>' : '') +
         '</' + tag + '>';
     }).join('');
   }
