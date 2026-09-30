@@ -534,3 +534,27 @@ a.s-row:hover .s-title { color: var(--accent); }
   .s-row .s-date { grid-column: 2; }
 }
 @media (max-width: 480px) { .home-hero h1 { font-size: 36px; } .home-mantra { font-size: 17px; } .home-mantra .sep { margin: 0 6px; } }
+
+/* Recording banner */
+.rec-banner { display: flex; align-items: center; gap: 16px; padding: 16px 20px; margin: 0 0 20px; border-radius: 12px; text-decoration: none; color: var(--text); background: var(--card-bg); border: 1px solid var(--rule); box-shadow: inset 4px 0 0 var(--primary); transition: border-color .15s, transform .15s; }
+.rec-banner:hover { border-color: var(--primary); transform: translateY(-1px); }
+.rec-play { width: 44px; height: 44px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; padding-left: 3px; }
+.rec-body { display: flex; flex-direction: column; flex: 1; min-width: 0; line-height: 1.4; }
+.rec-label { font-size: 10px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; color: var(--primary); }
+.rec-title { font-size: 15px; font-weight: 600; }
+.rec-note { font-size: 11.5px; color: var(--text-light); }
+.rec-cta { font-size: 13px; font-weight: 700; color: var(--primary); white-space: nowrap; }
+.inline-link { color: var(--primary); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+
+/* Short session script */
+.script { max-width: 760px; margin-top: 6px; }
+.sc-chapter { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: var(--accent); margin: 20px 0 6px; }
+.sc-chapter:first-child { margin-top: 4px; }
+.sc-n { font-family: 'JetBrains Mono', monospace; width: 20px; height: 20px; border-radius: 5px; background: var(--accent-light); display: flex; align-items: center; justify-content: center; font-size: 10px; letter-spacing: 0; }
+.sc-line { display: grid; grid-template-columns: 56px 1fr; gap: 10px; padding: 6px 0; }
+.sc-line b { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; font-weight: 600; color: var(--text-light); padding-top: 4px; }
+.sc-line.lead b { color: var(--primary); }
+.sc-line p { font-size: 14px; color: var(--text-mid); line-height: 1.65; }
+.sc-line:not(.lead) p { background: rgba(128,128,128,0.06); border-radius: 8px; padding: 6px 12px; }
+.sc-line p strong { color: var(--text); }
+@media (max-width: 560px) { .sc-line { grid-template-columns: 1fr; gap: 0; } .rec-banner { flex-wrap: wrap; } .rec-cta { width: 100%; padding-left: 60px; } }

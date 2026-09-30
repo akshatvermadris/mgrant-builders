@@ -27,6 +27,12 @@
   <p class="page-lede">This session covers the basic tech every product builder needs: how mGrant is put together and how to talk to developers clearly. The goal is simple. You should be able to understand what you're building, ask the right questions, and hand work to developers without it getting lost along the way.</p>
 </div>
 
+<a class="rec-banner" id="recording" href="https://dhwaniris1-my.sharepoint.com/personal/nandita_sharma_dhwaniris_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fnandita%5Fsharma%5Fdhwaniris%5Fcom%2FDocuments%2FRecordings%2FmGrant%20Builders%20%20Tech%20Fundamentals%20Session%2D20260930%5F110716%2DMeeting%20Recording%2Emp4&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview%2Eb402aeb9%2Db54e%2D4538%2Db8fb%2D16d507f40eaf" target="_blank" rel="noopener">
+  <span class="rec-play">&#9654;</span>
+  <span class="rec-body"><span class="rec-label">Watch the recording &middot; 52 min</span><span class="rec-title">mGrant Builders: Tech Fundamentals Session</span><span class="rec-note">Opens in Microsoft Stream &middot; sign in with your Dhwani account</span></span>
+  <span class="rec-cta">Watch &rarr;</span>
+</a>
+
 <!-- WHAT WE COVERED -->
 <section id="covered" data-nav="What we covered">
   <h2>What We Covered</h2>
@@ -328,7 +334,7 @@
   <div class="prose"><p style="font-size:13px">Tick items off. Your progress is saved in this browser only.</p></div>
   <div id="checklist">
     <label class="check-item"><input type="checkbox" data-k="c1"><span class="ci-text"><span class="owner">Everyone</span><strong>Practise deduction.</strong> For every incoming issue, name the layer (infra, code or data) before attempting a fix.</span></label>
-    <label class="check-item"><input type="checkbox" data-k="c2"><span class="ci-text"><span class="owner">Everyone</span><strong>Feed this session to your AI.</strong> Get the recording from Akshat, give it to your AI, argue with it, and encode your personal rules.</span></label>
+    <label class="check-item"><input type="checkbox" data-k="c2"><span class="ci-text"><span class="owner">Everyone</span><strong>Feed this session to your AI.</strong> Watch the <a class="inline-link" href="#recording">recording</a>, give it to your AI, argue with it, and encode your personal rules.</span></label>
     <label class="check-item"><input type="checkbox" data-k="c3"><span class="ci-text"><span class="owner">Everyone</span><strong>Start your rules file</strong> using the template above, and add the "don't overwrite form field config on release" rule.</span></label>
     <label class="check-item"><input type="checkbox" data-k="c4"><span class="ci-text"><span class="owner">Everyone</span><strong>Send session and debate ideas to Nandita</strong> so future sessions match what the team wants to learn.</span></label>
     <label class="check-item"><input type="checkbox" data-k="c5"><span class="ci-text"><span class="owner">Aman</span><strong>Share a standard plugin</strong> for everyone's AI setup. Each person's setup should still be unique to them.</span></label>
@@ -337,17 +343,57 @@
 </section>
 
 <!-- TRANSCRIPT -->
-<section id="transcript" data-nav="Transcript">
-  <h2>Transcript</h2>
-  <details class="transcript">
-    <summary><span class="chev">&#9654;</span> Show the full session transcript</summary>
-    <div class="callout note" style="margin-top:12px"><p>This is an auto-generated transcript (Wispr Flow) of a mixed Hindi/English room conversation, so speaker labels are approximate and some words may be misheard. <strong>Lead</strong> is the session lead; <strong>Room</strong> is everyone else.</p></div>
-    <div class="tr-tools">
-      <input class="tr-search" id="trSearch" type="search" placeholder="Search the transcript, e.g. terminal, token, infra…" aria-label="Search transcript">
-      <span class="tr-count" id="trCount"></span>
-    </div>
-    <div class="tr-list" id="trList"></div>
-  </details>
+<section id="transcript" data-nav="Session script">
+  <h2>The Session in 5 Minutes <span class="badge">Short script</span></h2>
+  <div class="prose"><p>A short, cleaned-up version of the conversation, translated into English. It's paraphrased, so <a class="inline-link" href="#recording">watch the recording</a> for the exact words.</p></div>
+
+  <div class="script">
+    <div class="sc-chapter"><span class="sc-n">1</span> The many hats</div>
+    <div class="sc-line lead"><b>Lead</b><p>An analyst's day used to be calls, MoMs, tickets and timelines. Now you're also gathering requirements, designing, wireframing, developing, documenting and presenting to clients. What have I missed?</p></div>
+    <div class="sc-line"><b>Room</b><p>Testing. Data engineering. Developing features.</p></div>
+    <div class="sc-line lead"><b>Lead</b><p>Right. Requirement gathering, design and development are three separate skills. Most of you do 8 or 9 of these, and many of you do all 10.</p></div>
+
+    <div class="sc-chapter"><span class="sc-n">2</span> The medium</div>
+    <div class="sc-line lead"><b>Lead</b><p>Design used to mean Figma and engineering meant VS Code. The medium has changed; the skill hasn't. So what's your medium now? Don't say "Claude".</p></div>
+    <div class="sc-line"><b>Room</b><p>The CLI, the command line interface. Instead of clicking around a GUI, you type commands and see the result.</p></div>
+    <div class="sc-line lead"><b>Lead</b><p>Take it back to the root: it's the <strong>terminal</strong>. Early computers only had a terminal. Then we got click-screens, then phones. When AI arrived, clicking became expensive, because it has to see, find, then click. So we all went back to the terminal. The difference now is that AI speaks the terminal's language and we speak English to the AI.</p></div>
+    <div class="sc-line lead"><b>Lead</b><p>CLI is a <em>capability</em>: "Slack CLI" or "Notion CLI" just means those tools respond to the terminal. Not comfortable in the terminal yet? Use Cowork, which is a UI on top of it.</p></div>
+
+    <div class="sc-chapter"><span class="sc-n">3</span> Vibe coding vs AI-assisted engineering</div>
+    <div class="sc-line lead"><b>Lead</b><p>If someone says you're vibe coding, the answer is no, you're not. If you are, you're doing it wrong. So what's the difference?</p></div>
+    <div class="sc-line"><b>Room</b><p>In vibe coding you don't really know how to code; you go with the flow. In assisted coding you know what needs doing, and you give the AI your own rules for security, fewer tokens and better efficiency.</p></div>
+    <div class="sc-line lead"><b>Lead</b><p>"This dashboard card doesn't look nice" is vibe coding. "The count on this card must show with commas" is AI-assisted engineering. So is "take the palette from this website, apply it, and show me first." Leaders can vibe code because they're imprinting years of experience. We can't.</p></div>
+    <div class="sc-line"><b>Room</b><p>The weaknesses are hallucination, wasted tokens and more of our time. You also don't know which technical route it took, and it brings security and compliance risks.</p></div>
+    <div class="sc-line lead"><b>Lead</b><p>All of that adds up to bad code. And a token is a made-up billing unit, roughly a word. It's what your 5-hour and weekly limits count.</p></div>
+
+    <div class="sc-chapter"><span class="sc-n">4</span> Rules &amp; patterns</div>
+    <div class="sc-line lead"><b>Lead</b><p>Good code isn't one person's vibe. A senior engineer knows a <strong>pattern</strong>. Learn it from them, and put it both in your model and in your own memory so each can check the other.</p></div>
+    <div class="sc-line lead"><b>Lead</b><p>Example: form field config lives in code and must not be overwritten on every release. Make that a core rule and it stops happening. Everyone should have their own rules, so change the conversation from "give me your rules" to "here's my rule, what's yours?"</p></div>
+
+    <div class="sc-chapter"><span class="sc-n">5</span> The three layers</div>
+    <div class="sc-line lead"><b>Lead</b><p>Technology isn't only digital. It's a way of doing things, even how someone parks a car. Digital technology, though, always has three layers. Any guesses?</p></div>
+    <div class="sc-line"><b>Room</b><p>Code, infra… security? UI? Config?</p></div>
+    <div class="sc-line lead"><b>Lead</b><p>UI and config are code. Security is infra. The missing one is <strong>data</strong>. Data, code and infra are three separate professions, and you're doing all three.</p></div>
+    <div class="sc-line"><b>Room</b><p>Data is information and values. Code is the instructions for how to work.</p></div>
+    <div class="sc-line lead"><b>Lead</b><p>Yes. <strong>Code is capability; data is the repository.</strong> In a house, the utensils and microwave are code and the food is data. Frappe fixtures sit in the DB, but they're code, because they define a form.</p></div>
+    <div class="sc-line"><b>Room</b><p>So infra is the structure of the house.</p></div>
+    <div class="sc-line lead"><b>Lead</b><p>Exactly, and the structure has to fit the capability. Storing photos in the DB without S3 is putting the fridge on a table. One day the table breaks.</p></div>
+
+    <div class="sc-chapter"><span class="sc-n">6</span> Deduction</div>
+    <div class="sc-line lead"><b>Lead</b><p>Half our time goes into working out which layer an issue is in. Say I'm the client and I tell you "my Output table isn't working." What do you ask me?</p></div>
+    <div class="sc-line"><b>Room</b><p>Was it working before? Did a new release or migration go out?</p></div>
+    <div class="sc-line lead"><b>Lead</b><p>That's history, and it's a good question. Then ask three more: <strong>Can you see the other tables? Can you see this table in other projects? Are the numbers what they should be?</strong> The answers point to infra, code and data, in that order.</p></div>
+    <div class="sc-line lead"><b>Lead</b><p>People call something an infra issue when every other table works fine. That's why deduction matters: classify first, then fix. Go practise this with your AI.</p></div>
+
+    <div class="sc-chapter"><span class="sc-n">&rarr;</span> Wrap-up</div>
+    <div class="sc-line lead"><b>Lead</b><p>More sessions are coming: design, testing, docs, marketing and BD, plus debates. Send ideas to Nandita. Take this recording, feed it to your AI, and argue with it.</p></div>
+  </div>
+
+  <a class="rec-banner" href="https://dhwaniris1-my.sharepoint.com/personal/nandita_sharma_dhwaniris_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fnandita%5Fsharma%5Fdhwaniris%5Fcom%2FDocuments%2FRecordings%2FmGrant%20Builders%20%20Tech%20Fundamentals%20Session%2D20260930%5F110716%2DMeeting%20Recording%2Emp4&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview%2Eb402aeb9%2Db54e%2D4538%2Db8fb%2D16d507f40eaf" target="_blank" rel="noopener" style="margin-top:18px">
+    <span class="rec-play">&#9654;</span>
+    <span class="rec-body"><span class="rec-label">Full recording &middot; 52 min</span><span class="rec-title">Watch the whole session on Microsoft Stream</span></span>
+    <span class="rec-cta">Open &rarr;</span>
+  </a>
 </section>
 
 <div id="pager"></div>
@@ -358,558 +404,6 @@
 </div>
 
 </div></div>
-
-<script type="text/plain" id="transcriptSrc">
-Speaker 1: We do training sessions on everything. No, we could not have training sessions on everything. We had to have select topics, right?
-Speaker 1: Now you're not only going into development. Now, if you go and see it, you go into marketing, you go present your solutions to your client, you go into requirement gathering, you're going into documentation, you're going into engineering, designing, wireframing.
-Speaker 1: Um, does anyone else have any other things—any other things also which they do, which I have not talked about? Data engineering, anything else?
-Speaker 2: Testing.
-Speaker 1: Testing.
-Speaker 2: Designing and auto-playing.
-Speaker 1: Designing, yes.
-Speaker 2: Feature. Developing features.
-Speaker 1: Developing features, yeah. Combination of two skills. One is three, I believe.
-Speaker 1: One is requirement gathering, then designing, then development. All three are separate skills, yes.
-Speaker 1: Anything which I have missed? Maybe which you also additionally do.
-Speaker 1: I'm saying, trying to cover everything in terms of the description. Are you blushing?
-Speaker 2: I'm so blushing.
-Speaker 1: He's looking at me and he's blushing. I'm like, are, haan, main itna sab kuch karta hoon. Main toh ek text bhejta tha, bas.
-Speaker 1: Now, uh, so yes, all of us are doing all of that. Now, if you—I think there are very less things in this list jo maine bola hoga jo maybe aap log nahi kar rahe ho.
-Speaker 1: Agar if I'm taking the name of at least 10 skills or capabilities, you might be doing 8 to 9. If not, all 10.
-Speaker 1: A lot of you must be doing all 10 also. But what that also means is, in terms of skills or capabilities.
-Speaker 1: Chhodo. Aaya hamara.
-Speaker 2: I have to step out for meet and over testing.
-Speaker 1: No.
-Speaker 2: If you're—
-Speaker 1: Ho gaya, nahi, nahi, woh check toh kar liya, deploy hua toh.
-Speaker 2: So, dashboard test karna hai kyunki unko exact V2 ka dikhana hai panel mein. V2 wala dashboard, it's there na, you—Vedanta dashboard is already there.
-Speaker 1: Deploy toh. Main, main uske kaam ke liye hi bol raha hoon. Karne do.
-Speaker 1: Aap test karoge, phir ek aur aa jaega.
-Speaker 2: Dashboard, you have made some changes to that.
-Speaker 1: Haan, haan, Vedanta ko maine match kiya tha. I've made it, it was rendering inside also na. And the drilldowns were not showing.
-Speaker 1: No, you can do it outside also. In case the focus is to not be distracted by this product.
-Speaker 1: Main aapko aapko bol ke review kar leta hoon. So just recapping very quickly.
-Speaker 1: I'll not recap it for any other one. Uh, we're just talking about how we are having the initial set of sessions and the sessions now.
-Speaker 1: Uh, I think we were talking about all the skills and capabilities you started working on. Whether it is requirement gathering, designing, wireframing, development, even marketing presentation, all of that, like documentation.
-Speaker 1: Now, what that means is, even in essence, agar aapka method of doing pehle kya tha, pehle aapko agar designing karna hai, aapko Figma kholna hai, Figma mein karna hai. Pehle aapko engineering karna hai, VS Code kholna hai, VS Code mein karna hai.
-Speaker 1: Now the medium has changed. Please do not forget the skill has not changed.
-Speaker 1: The capability has not changed. Coding ki capability abhi bhi coding ki capability hai.
-Speaker 1: It's just that the method jo bhi medium tha, pehle medium tha VS Code ke through aapko likhna hai, in the term. Now the medium has changed.
-Speaker 1: It happens through a what, Claude CLI, or Codex CLI, or whatever it is. Now, I think right off the bat, before we get into all the skills, first thing which I want to clarify because today is technology fundamentals.
-Speaker 1: So we will focus on one of the core skills or set of skills, which is engineering. Today's session and focus is that.
-Speaker 1: But because this is the starter of a lot of other sessions which we will have, I wanted to set a base. Now that your medium, jaise maine bola, your medium is not VS Code, your medium is not Figma.
-Speaker 1: Can someone here tell me, what is your current medium of doing all these work? The right terminology.
-Speaker 1: Do not say Claude. That is not the right terminology.
-Speaker 2: CLI.
-Speaker 1: CLI. Can you define a CLI?
-Speaker 2: Command line interface.
-Speaker 1: Thanks for expanding on yours.
-Speaker 2: I'm not giving command interface to have the word there. Like, so we have this GUI thing. That is that graphic user interface where you drag and drop and use mouse over, right?
-Speaker 2: But in CLI we type into commands and see the result.
-Speaker 1: Right, so do you understand?
-Speaker 2: I hope I made her understand this.
-Speaker 3: I only asked him the same question.
-Speaker 1: And did you understand? Now, have you understood now?
-Speaker 2: A little bit.
-Speaker 1: Little bit. Okay. Anyone else also wants to add on?
-Speaker 1: Because very, very important that we understand the medium before we get into.
-Speaker 2: Okay.
-Speaker 1: Okay. Kisi ko chahiye? Aapko chahiye?
-Speaker 2: nahi.
-Speaker 1: aapko nahi chahiye?
-Speaker 2: aapko chahiye?
-Speaker 1: nahi, nahi, aapko.
-Speaker 2: thik, toh ye kisko?
-Speaker 1: sansan wala do pees ho gaye. chhodo, nahi karna.
-Speaker 1: Fine. Anyone else?
-Speaker 1: What is a command line interface? Or rather, let's dumb it, not dumb it down, bring it back to root.
-Speaker 1: It's something called a terminal.
-Speaker 1: You can add on to what I'm saying. What is the current medium where you work with the tool?
-Speaker 2: Usually working with the terminal. Giving, uh, basically it's that has the access of a machine on which you are working on it.
-Speaker 1: pata chal jata hai kaun-kaun detects kiske saath hai. Let me put it this way. When computers were first built or brought upon, that's I think 1980?
-Speaker 2: 1990.
-Speaker 1: Uh, the only way of communicating, matlab agar aapko OnePlus 2 bhi karna tha ya Chrome open karna tha, then there used to be something called a terminal. Very simple terminal. And tab you did not have a clickity-clukkity wo sab nahi hota tha.
-Speaker 1: Through the terminal, you could say, "Open window," it would always open a window. There used to be a command for it.
-Speaker 1: But in essence, it used to be open window, open Chrome, open whatever. Then we got the very nice screen which we could click and then it checked.
-Speaker 1: Then it used to take 10 minutes to load. So you guys wouldn't know.
-Speaker 1: Then we got phones. That screen obviously changed.
-Speaker 1: Now, a very funny part has happened is, when, um, AI has come into picture, the conversation has gone back to agar main abhi click-click karoon, AI ko click-click karwana hai higher because it has to first see, then it has to find, then it has to go and click. So you will see is there is more, uh, cost to more activities, effort to do that work than to run a command.
-Speaker 1: So honestly, we went back. So ab maan lo ki if you see the way we have evolved with technology, the moment AI came into picture, all of us went back to the terminal.
-Speaker 1: Because the terminal was the one place where you could just write commands and do things. And you could do whatever you want.
-Speaker 1: Settings change kar sakte ho aap. Aap kisi ko message kar sakte ho.
-Speaker 1: ek app ke through you can start testing a portal which is on the online web. You can pull something from online.
-Speaker 1: You can make a Word doc. Because you have to tell the terminal, "Pull from online, open Word doc."
-Speaker 1: Now, initially in 80s and 90s, obviously these were all commands. There was a whole programming language behind it because the terminal only had a very specific way of communication.
-Speaker 1: AI has said ki main I will talk to the terminal in the way and the language which is supposed to be talked to. But with me, you can obviously talk in simple English, which is, which is what we are all going for.
-Speaker 1: So that is the terminal. And I think all of us here are on the terminal.
-Speaker 1: Whoever has not, can get on the terminal. Or if you are not comfortable, go on cobot.
-Speaker 1: Because that is, that is a way of, uh, let's say ki what Claude and Anthropic companies have done is, they've created a nice UI over the terminal. They call it cobot.
-Speaker 1: So first thing you will see is when you go ahead and to agar I don't know, have any of you used cobot?
-Speaker 2: Yes.
-Speaker 1: So when you install cobot, you'll see the first permission it takes would be for the terminal. You want a terminal uske baad kya, vo us pe hi kaam karega. So in, in, in essence, it's working in the terminal.
-Speaker 1: So the medium, when someone asks you, you know, what is your medium of working? How do you code?
-Speaker 1: Where do you design? Where do you use a terminal?
-Speaker 1: Because CLI is a format. Why CLI is not the answer here.
-Speaker 1: Uh, at least because CLI is the capability. Now you will see Slack CLI.
-Speaker 1: You see Notion CLI. It is basically Slack and Notion and companies like this saying ki aap hamare tools ko terminal ke through chala sakte ho.
-Speaker 1: We have made our tools respond to that terminal language. Right.
-Speaker 1: That is the plan meetings. That's it.
-Speaker 1: So, uh, we saw, we gave you a safe man.
-Speaker 2: No worries.
-Speaker 1: No worries. Okay. So that is why, that is the medium of communication.
-Speaker 1: We have, we have played clear, clear on terminals.
-Speaker 2: Yeah.
-Speaker 1: Now, when it comes to skills, today our focus would be on engineering. But remember, and you have to hold me accountable for it, and Nandita here, because we are responsible. She's saying hi.
-Speaker 1: Say hi back, man.
-Speaker 2: Hi to everyone.
-Speaker 1: She's saying hi to everyone.
-Speaker 2: Who is responsible?
-Speaker 1: So it means we have to know these skills. Remember, terminal hi banaya hai abhi. Terminal ko samajhne ki capability bani hai.
-Speaker 1: No one has taught any tool how to design, how to code, how to write. You are the one who is doing that.
-Speaker 1: So if someone comes and tells you, first conversation is when engineer comes and tells you, if a designer comes and tells you, "Your vibe coding, your vibe designing." No, you're not.
-Speaker 1: If you're doing it, you're doing it wrong. It's very, very important for us to understand what is vibe coding.
-Speaker 1: Again, does anyone want to give me a very small clue what is vibe coding?
-Speaker 1: What is the difference between vibe coding and AI-assisted engineering? You can give me two examples and maybe bucket them in code.
-Speaker 2: Okay. So for the, so in the vibe coding, basically you have the requirements with you. You want to design something with.
-Speaker 2: So firstly, in the vibe coding, you need to design everything. PRD, everything, the spec, and they design what you want to be.
-Speaker 2: In AI-assisted engineering, you just tell your terminal to do this. He will be able to figure it out.
-Speaker 2: So there is a difference between, uh, how you are doing the vibe coding and how you are doing the development through A. A lot of difference.
-Speaker 1: Okay.
-Speaker 2: In, in, in, uh, the assisted coding which we do ourselves, we, uh, what should I say, ki hum log matlab pehle decide when writing the code, we go through a lot of algorithms to decide which approach to take on. And how to shorten the function and everything, the class and everything. But in vibe coding, I guess he picks it of functions when we are vibe coding, works on that algorithm which are already there globally.
-Speaker 2: First he picks that, then we just, we can guide him that don't, we can go with this approach, then he might change his approach. But the first thing that AI will do is that the, I guess what I felt is ki vo sabse jo sabse common algorithms jo hoti hai, vo shayad sabse pehle vo pick karta hai, then we can modify that.
-Speaker 1: Anyone else? Someone wants to give a guess?
-Speaker 2: No. I think, uh, so sabse pehle to if we look back, sabse. Traditional coding thi, where you learn lines kya hai, O12 kya hai, sab operating systems kya hai, networking kya hai, sab basic samajhte the.
-Speaker 2: Theek hai? But now, in this AI age, we are more into understanding how AI works and how assisted working works, right? So now this terms vibe coding, AI-assisted coding and all, ye parallel chal raha hai.
-Speaker 2: I think.
-Speaker 1: Kitne chalega?
-Speaker 2: 12 tak chalega, sir. Nahi, room nahi chahiye.
-Speaker 1: Le jao.
-Speaker 2: Uh, thoda sa urgent hai, lekin vo vala khwahish ko thoda sa theek hai.
-Speaker 1: We understand your.
-Speaker 2: Mujhe laga aapne free mein jyada hai. Haan, main bhi karta rehta hoon.
-Speaker 1: So because you're basically, uh, so the first.
-Speaker 2: Recording is on, na?
-Speaker 1: Yeah.
-Speaker 2: So the first pehle primitive way mein traditional coding hoti thi. Ab AI coding mein do layers aa gain, hamari assisted coding aur vibe coding. Vibe coding is more like ki you don't know, you don't know how to code, but you are just going with the vibe.
-Speaker 2: You are just going with the flow. And assisted coding mein you know what is to be done.
-Speaker 2: You are, uh, you know, assisting your Claude to be done in a separate constructed way. You are giving him instruction to follow security.
-Speaker 2: matlab you are making your own protocols and rules that you would want the Claude to follow, maybe to have the less tokens and to drive greater efficiency. So maybe assisted coding is a better version of vibe coding.
-Speaker 1: I think that's around. Uh, let me give two examples. I feel like this dashboard card doesn't look nice.
-Speaker 1: Versus is dashboard card mein jo ek count hai, it has to come in common sense.
-Speaker 1: Second, or which I said, is AI-assisted engineering. First point is vibe coding.
-Speaker 1: Give me an, give me an example. As of today, leaders in the world, their work is to vibe code.
-Speaker 1: So if you go to Swapnath sir and say, "kuch banao," his work is to vibe code. Because the way he is able to imprint his experience and ideology into the thinking of an AI is what matters.
-Speaker 1: But when it comes to us, it has to be AI-assisted engineering. We cannot go and say, "This dashboard doesn't look good, improve it."
-Speaker 1: Or we cannot say, "iska green nahi, koi aur color palette lo." If it is open-ended, it is vibe coding.
-Speaker 1: It cannot end with, and then you will see that it takes its own bloody time. Because it is going, then finding wo color palette jake wo ban raha hai color ka expert, and then it is going and doing the colors also.
-Speaker 1: Instead of you doing the colors, saying me, "ye color daal," why are you thinking so much? Or you can also do something.
-Speaker 1: For example, when someone says AI-assisted engineering, and this is why there is a very grey line. Uh, certain organizations are working, you're making a dashboard.
-Speaker 1: Now either you can say, "This dashboard color doesn't look good," make it look good. Or you go and say, "Here is the website.
-Speaker 1: Please note the primary, secondary, and tertiary color palettes from here and imprint it on the dashboard. Before you do it, show it to me so that I am also aware."
-Speaker 1: And this is not vibe coding. How much ever an engineer or a designer, because a lot of the problem of AI is there is also a political side of it and there is a work side of it.
-Speaker 1: Political side I will not get into. Maybe someday as a discussion we can have a debate or something, whatever intrigues you guys, to discuss that.
-Speaker 1: Because that is a, that's a field in itself. There are a lot of specialists who are very against it, uh, the way it is being used.
-Speaker 1: They are very special, and there are specialists for it also. That's maybe a debate we'll have with Namma and Hedinge.
-Speaker 1: But, uh, when it comes to AI-assisted and vibe coding, today we cannot afford vibe coding. As you can understand, vibe coding has a bit a lot of weaknesses for us.
-Speaker 1: Can you guys give me one, two weaknesses which happens in vibe coding which you can avoid with AI-assisted engineering?
-Speaker 2: The first one is AI is limited. So, uh, in excessive use of vibe coding leads to loss of tokens a lot. I think that, uh, in vibe coding sometimes it starts hallucinating as well.
-Speaker 2: Then you have to give it direction.
-Speaker 1: I have hallucination. Okay.
-Speaker 1: You said I will put it as, uh, lower efficiency of token consumption. I mean, these terminals people understand.
-Speaker 1: I assume token, but if anyone has a doubt, we can go over what a token is also. We clear on what a token is?
-Speaker 2: Yeah.
-Speaker 1: What is a token, Namma?
-Speaker 2: Repo token.
-Speaker 1: What?
-Speaker 1: What is a read access of the code?
-Speaker 2: These are weaknesses of AI.
-Speaker 1: Weaknesses of vibe coding.
-Speaker 2: Vibe coding.
-Speaker 1: Vibe coding. What? What is a token?
-Speaker 2: Just be weak with it.
-Speaker 1: No worries. Token is a word. Any standard word is a token.
-Speaker 1: So when we have trained, or not weak, whatever our pardada billionaires now have trained their respective models, their large language models jo bolte hain, they have taught the AI and they have made a unit. Please note, token is a made-up word.
-Speaker 1: It is not a word which is a physical or a computer science truth. They say one and zero jo binary bola jata hai, that's a fundamental truth.
-Speaker 1: Token is not a fundamental truth. It is made up so that there can be some paisa they can charge from us.
-Speaker 1: And obviously there is consumption rate of electricity. But token is basically a word.
-Speaker 1: For example, your name would be one and a half tokens. More or less, I would believe.
-Speaker 1: Because it depends on, for example, agar aap shabd ki baat kar rahe ho, three. Three is a token.
-Speaker 1: So there is a token cost for each word based on the meaning of the word, how long is the word, how many synonyms of the word is there. So a token defined and token value.
-Speaker 1: And that value basically defines your cost. I think we know jo session window hota hai hamare, five hours ya to week ke, is where there is a limit of tokens.
-Speaker 1: Right. Now there is a very interesting read, if you guys want to know, ki jo weekly session, jaise normally kya hota hai, aap agar kisi bhi tool pe kaam kar rahe ho, wo bolta hai, you can make five projects or you can make hundred tickets, iske baad paid hai.
-Speaker 1: But ye jo weekly session hai na, Anthropic jo is maintain karta hai, that is dynamic. It is not based on how many words you are inputting.
-Speaker 1: The way they do it is very dynamic. Every week they go and check the whole globe, see what kind of meaning you are trying to derive from the word, and then they put a price.
-Speaker 1: So weekly session, technically if it is, let's say, of two million tokens in week one, it can be two three million tokens in week two. So the way they price it is very funny.
-Speaker 1: Not funny, I would say the only way to price it is right now a different model instead of this AI. Anyhow, two weaknesses.
-Speaker 1: Any others? Higher hallucination, lower efficiency of token consumption.
-Speaker 2: I think it sets wrong expectations to the business as well. If you think, like, uh, if we are having two non-tech business owners and we are setting, uh, we are making sure that, uh, we deliver something content, right, it delivers wrong expectation that, okay, AI can do so many things. Now next time we will, we will, uh, we will have some more different things to have.
-Speaker 2: So it, it delivers wrong expectations for business perspective, I guess.
-Speaker 1: Those are fields. But I understand, but maybe not weakness of vibe coding.
-Speaker 2: Haa, but agar wo hum for that particular cheez, hum jo karna chahte hain, usko apne module ko hum waise train karein, to I can we can achieve this, na. Phir agar usme wo kuch bhi alag hona cha raha hai, theek hai, wo keh rahe hain business perspective se sahi hai, but if you give four business perspectives to at one prompt, to it will help you.
-Speaker 1: So I think this is a conversation which is nice, but this is a conversation which we should maybe have a debate session on. And this is a good one. Maybe if we can create two sides, one of these weeks.
-Speaker 2: Just to pinch up here.
-Speaker 1: Phir hum debate karenge.
-Speaker 2: nahi, bas ek cheez bolunga, phir aapko pata hai na, nahi aayega phir woh.
-Speaker 1: sach hai, bor ho gaya.
-Speaker 2: That G3MIS wala, uh, kya tha woh, resume parser nahi, vaisa jo similar sa banaya tha na, proposal to documents to proposal, woh wala. To I trained my module according to the RAG and OCR and everything. Now he gave me a very good response on it.
-Speaker 2: And jo usko to polish karna tha, I made a report, I will show it to you. To where we lacked and why we cannot implement a full RAG implementation there.
-Speaker 2: That we will discuss. But woh us, agar usse pehle jab main kar raha tha, to there were discrepancies.
-Speaker 2: woh keh raha hai, ye karte the, woh karte the, but wahan mere ko bhi lag raha tha, jab main aapke pas aaya tha, yaar ye changes to nahi ho sakte.
-Speaker 2: theek hai, then when you said about the RAG and all, then I said, oh yes, we can do this. Then when I trained it, like for like 15-20 minutes only, then I get the best output. To agar maine usko ek hi cheez ke bare mein jab bataya dhang se, usi ko, usko particularly uspe train kiya, then I get the output for that business perspective only.
-Speaker 1: Any other weaknesses maybe towards this?
-Speaker 2: iss se bhi take a lot of time. Jahan pe koi cheez, uh,
-Speaker 1: We can say time, more time, human time as right, so that they know we understand, to hamara time hai.
-Speaker 2: I think when you are vibe coding, you don't really know the technical behind the roots. matlab ki ek task ko karne ke kaafi tareeqe ho sakte hain. haan.
-Speaker 2: And like, most probably like if an analyst is doing, who is not aware about ki technical roots jo ki ek engineer ko pata hota hai. To like, maybe you can't take the best one and you leave it to AI to figure out ki what is the best route.
-Speaker 1: Because right now I don't want to get into unoptimized code, and this is the bad code.
-Speaker 2: sorry, sorry.
-Speaker 1: Anything else?
-Speaker 2: I think on to this, I guess we will have, uh, matlab compliance mein bahut dikkat aayegi, networking mein bahut dikkat aayegi, security threats aa sakte hain.
-Speaker 1: Bad code. That's definitely bad code because it sounds like pretty much everything. I don't want to go into the, because that is a whole story in itself.
-Speaker 1: Anything else? Because I think, not now, I want to start on technology.
-Speaker 1: So anything to add on, we get through. So right now our aim, guys, is we will have multiple sessions.
-Speaker 1: This is the first one. This is on technology fundamentals.
-Speaker 1: This can have maybe more. We are going to have on design.
-Speaker 1: We are going to have on testing. We are going to have on documentation.
-Speaker 1: We are going to have on, uh, some one of you said something. Okay.
-Speaker 1: Marketing. Business development.
-Speaker 1: Right. Now the aim of these sessions is Akshat will record, you will record, we will record.
-Speaker 1: We will have people coming and talking here. You said, no, what is bad code?
-Speaker 1: So I make bad code. Then there is a definition of what is good code.
-Speaker 1: And we have to note all of it is a pattern. It is not ki maine seekha, what is good code.
-Speaker 1: Good code is Vivek's vibes. No.
-Speaker 1: Vivek knows a pattern of code which we need. And you don't need to mentally remember it.
-Speaker 1: You need to learn it from him, put it in the model, you and put it in your memory so that you can have a double check. Your model knows it, you know it.
-Speaker 1: So if it misses, you can check. But our activity is to find these patterns, these algorithms, these keys, these words.
-Speaker 1: For example, bad code, aapke example in relation to only one rule. If you saw the whole code, tum agar super summarize karte, don't put shit in transcript.
-Speaker 1: Everything should not be a migrate code. Agar form ka jo field hota hai, vo code me hona chahiye.
-Speaker 1: Vo har release ke sath overwrite nahi hona chahiye. Faltu ka kaam hai vo.
-Speaker 1: This is not, like you said, you understood it very simply. Now that is a core rule.
-Speaker 1: If we make it a core rule, you know this will never happen. Agar ho bhi gaya to you remember, because you will have a check.
-Speaker 1: Right. Obviously it is a, our aim is through these multiple sessions and we would want debates in between.
-Speaker 1: So for example, you guys want to debate on specialists, I would say have it. Because there is some kind of question poll you guys will learn and do in these debates.
-Speaker 1: You have ideas, you have interests. Just let Nandita also know so that we can set those up.
-Speaker 1: But majorly for us, today is Wednesday, but maybe Wednesday, Thursday, same time around, we will have sessions around this. Output from these calls is one, steal the recordings from Akshat and feed it into your AI, have an argument.
-Speaker 1: And I would say maybe Akshat, sorry, Aman down the line will also share a plugin to all of you guys, which will be a standard. But all those setups should be unique to you.
-Speaker 1: It is like your computer. You have to realize in the industry now, this is the competition.
-Speaker 1: How better are the rules encoded in your system versus mine? Who can do this faster and better and better code than the other?
-Speaker 1: Pehle abhi bhi industry is a competition. Like if you are doing any kind of interview to Deloitte or BCG, it is not a racing running competition, but it is, oh, are you eligible for this role?
-Speaker 1: And how will the eligibility be categorized by how much knowledge you have? Knowledge is patterns.
-Speaker 1: Knowledge is not some rata hua shabd engineering ke char book niche. Because all of it follows a standard fundamental because of which people made hundred OOPs vagaira ek reason se banaya tha.
-Speaker 1: Vo reason dhoondhna zaroori hai. If you find the reason, you can do it anyway you want, only if the fundamental truth is observed.
-Speaker 1: Jo bolte hain, hum bolte hain, usko axiom bolte hain. Physics me bolne bachho ko bahut pasand hai ye.
-Speaker 1: Because it define, axioms define whatever are very constant truths. Those won't change.
-Speaker 1: Matlab agar kisi ne ye jo law hai, main frappe lekar aa jaun, kal main, main tally de doon, parso main soho de doon, ye law to change nahi hoga. Code ko haten, overwrite nahi karna chahiye.
-Speaker 1: Vo to matlab is a fundamental truth for you. So that's what we need to know.
-Speaker 1: So my challenge is we will have many sessions. So it's very, very important you understand this objective.
-Speaker 1: You listen, you learn, you encode. And then you have conversations with each other on this, mere paas to ye rule hai, what rule do you have?
-Speaker 1: Instead of, I don't have any rules, give me your rules. Let's change that conversation.
-Speaker 1: Everyone should have their customized set of rules based on truths. And then you can share if you want to share.
-Speaker 1: You don't want to share. Make sense?
-Speaker 1: We are clear on this somewhat, somewhat? Sach hai, I know you are three to four girlfriends, but still, I don't want to.
-Speaker 1: Okay. We will move today towards technology.
-Speaker 1: Main aim is for us to understand basic the fundamentals. We will get into some more truths in one or two more classes.
-Speaker 1: But today is basic fundamentals of when koi technology bolta hai, uska matlab kya hai. Now can very briefly someone just explain, when someone says technology to you, what does come to your mind?
-Speaker 1: When someone says technology, technology karna hai, technology me kuch karna hai.
-Speaker 1: Sab sham ko jata hi nahi kya dimag me?
-Speaker 2: Main bahut bol gaya, main nahi bol raha.
-Speaker 1: main bahut bol diya, limit tha kya aaj? Hamara bhi five, ek one hour session.
-Speaker 2: to phir khatam ho gaya.
-Speaker 1: khatam.
-Speaker 1: When someone says technology to you, what comes to mind?
-Speaker 2: jisme, I guess, mere ko to aisa, jaise ki main apna personal bata raha hoon, isme mere ko aisa lagta hai ki labor ki involvement kam hone wali hai. Something tech-oriented that obviously reduces human effort, that is labor.
-Speaker 1: What is tech? To bhai, I want to know, tech kya hai aapke liye?
-Speaker 2: Just mainly, main to mainly tech ye hai ki jisme, agar koi mere ko pehle tech word use kare, jisme my first perception is ki jaise mera, uh, kya kehte hain yaar, more about, more about.
-Speaker 1: aaj to pata nahi padega yaar.
-Speaker 2: Human efficiency kam hone wali hai.
-Speaker 1: ye bata raha hai kuch na.
-Speaker 2: matlab jaise tech is BTech.
-Speaker 1: Digital toolbox hai, jisme hamare paas, hum, hum.
-Speaker 2: So what, what do you have to choose?
-Speaker 1: One thing before we have to change.
-Speaker 2: jo us wale ko digitalize kaise karenge, agar usko tech bol diya to?
-Speaker 1: are, main to bolta hoon, technology is not digital. This is where maybe I like this definition. Technology can be anything.
-Speaker 1: It can be the way idhar ke bhaiya parks the car. Technology is a way of doing things.
-Speaker 1: It is a pattern of doing things. It is an algorithm of doing things.
-Speaker 1: People can say whatever they want. But the only thing is definitions sabke, it's a very vague word in that way.
-Speaker 1: It is not digital.
-Speaker 2: Methods of solving practical problem ya phir.
-Speaker 1: Exactly. Can work, but it is not digital. Digital technology is a different thing.
-Speaker 2: Nahi, digital infrastructure.
-Speaker 1: So I like to, I don't know, for some reason for me, the number three matters a lot to me because of the fact when you look at anything, it generally is able to sum it up. Three, aur in some cases four of time mein bhi chale jaate hain. But at least focusing on digital technology.
-Speaker 1: Because when I talk about other kinds of technology, that's a separate domain. Usmein kitne log, kya kitni cheezein involved hote hain.
-Speaker 1: But digital technology mein there are three layers. Whenever we are talking about digital technologies, there are three layers.
-Speaker 1: Anyone wants to give a guess? If you have had a session before with me, maybe you've covered this very briefly.
-Speaker 2: Code level, infra level.
-Speaker 1: Yes, transformation.
-Speaker 2: Transformation bolenge ya something.
-Speaker 1: The three layers. Matlab if you want to define, if you want to define kya, this digital technology, then you will say that haan, it has three layers for it to work like it is working.
-Speaker 2: Like how it is working?
-Speaker 1: Any digital technology. Whether the digital technology is hardcore based digital technology, it's hardcore work. Hardware based digital technology or software based digital technology.
-Speaker 1: To ye hard software aur digital technology ke recipients, but hardware version.
-Speaker 2: Front-end ka notebook mein dekh raha hai.
-Speaker 2: Sabse pehle code.
-Speaker 1: Code diya tha isne, haan haan, overall aadmi.
-Speaker 2: Aur code level pe, phir hamara infra level pe, and then uske upar phir network ya security level.
-Speaker 1: 2x3 sahi the.
-Speaker 2: Haan, haan.
-Speaker 1: 0.6%. One more is there. kaisi kaisi?
-Speaker 1: You work on it daily. You work on one of the three daily.
-Speaker 2: UI.
-Speaker 1: UI is part of code.
-Speaker 2: Config level.
-Speaker 1: Config code aur code config infra. Maybe you want to give a guess? What do you think is missing?
-Speaker 1: In, let's say agar mujhe koi bhi tool mein kaam karna hai, ya to main usko code change karunga, ya to main ankit ko tang karke uska server vagera ka kuch kaam karunga, ya to teesra kya hai? teesra kya hoga?
-Speaker 1: When someone gives you any mgrand portal, they can give you three work. Either is coding work.
-Speaker 1: That is coding work. Either is URL work, you know, which is infra work.
-Speaker 1: ankit ka kaam. teesra kaam kya dete log?
-Speaker 2: Security server.
-Speaker 1: That is again infra work.
-Speaker 2: Infra work.
-Speaker 1: Data.
-Speaker 2: Oh, BTech wale ne bola hai kya? tum nahi ho BTech, main jaanta hoon.
-Speaker 1: This is what's so concerned. Data. So there are three layers.
-Speaker 1: When someone needs you to define a digital technology, there is always three layers. There is data, and there is code, and there is infra.
-Speaker 1: And this matters a lot for us to understand these three layers. Because a lot of times, your first duty, whether you are code, whether you are working, whether you are debugging, whether someone has come and cried to you, is to figure out in teeno mein se kaun sa hai.
-Speaker 1: Because all three are their own domains. All three is a different skill in itself.
-Speaker 1: in teeno mein to professions hi alag hain. And as of today, you guys are doing all three.
-Speaker 1: Infrastructure thoda kam hoga.
-Speaker 2: ya aapko pata chal raha hoga.
-Speaker 1: More or less.
-Speaker 2: haan?
-Speaker 1: aapko pata chal raha hoga, unko nahi pata chal raha hoga.
-Speaker 2: kya?
-Speaker 1: We are doing all these three.
-Speaker 2: aur kaun hai?
-Speaker 1: Management baseline.
-Speaker 2: wo tum theek se nahi kar rahe na.
-Speaker 1: ya.
-Speaker 2: haan, matlab jab tum de rahe ho, tum theek hai, jab nahi de rahe ho, tum theek se nahi de rahe.
-Speaker 1: isliye toh session chal rahi hai, toh tum de rahe ho, de rahe ho. So there is data, there is code, there is infra. So we are all, uh, whenever we say data, there is a different way of solving things.
-Speaker 1: tab code, jaise aapko same issue agar code me mil raha hai, same issue data me mil raha hai, same fix nahi jaati. agar code me jaana hai, GitHub me ghuso, PR lagao, data me jaana hai, abhi to chalo ek-ek token daalo, khatam karo kahaani.
-Speaker 2: DB ko access karo.
-Speaker 1: haan, DB ko access karo.
-Speaker 1: So there are three layers. Today I'll focus on the fundamental of three layers.
-Speaker 1: Right. Now in this, it is very important to first define what are each of the three layers and unke wo kya hai?
-Speaker 1: What is the, idhar ke beech me territory kya hai? Kahan se code takeover karta hai, kahan se infra takeover karta hai.
-Speaker 1: So let's first talk about data and code. And let's talk specific to frappe and mgrand because it will be easier for you to relate.
-Speaker 1: But you can, you can extrapolate into any other conversation. Data and code me what is the wedge?
-Speaker 1: What is the difference between ye data nahi hai, ye code hai. And leave it a very functional answer.
-Speaker 1: It is not a technical answer. And that's why frappe is an amazing example of this.
-Speaker 1: It is not a functional answer, it's a technical, sorry, it's not a technical answer, it's a functional answer. matlab samjho, bas BTech wale nahi de sakte.
-Speaker 1: Data and code ke beech mein difference kya hai? Where is you draw a wedge ki this is code, this is not data.
-Speaker 2: Kuch cheezein config se nahi ho pati.
-Speaker 1: Woh toh phir matlab force ho gaya yaar. That can change. Tomorrow I'll give you survey CTO, tum sab kar sakte ho.
-Speaker 1: Tomorrow I'll give you VS Code, tum sab kar sakte ho.
-Speaker 2: Data, data doctype mein store hota hai, doctype GB mein store hota hai, toh matlab.
-Speaker 1: I can store code also in DB. You know guys.
-Speaker 2: Doctype is a wrong process, no?
-Speaker 1: Wrong process, but I can. Woh, that's the difference. Functional difference batao.
-Speaker 1: Yeh phir, this is not a full proof.
-Speaker 2: Matlab yeh batana hai ki data aur code mein kya fark hai?
-Speaker 1: Kya fark hai? Where does code stop and data begin?
-Speaker 2: Dekho, if we go traditionally, toh frappe se hatke, data basically hamara dynamic, statically hota hai, aur code hamara dynamically ki if I am seeing ki anything jo aa raha hai mere samne, woh peeche se aa raha hai, and woh dynamic hai as well.
-Speaker 1: Peeche se aa raha hai.
-Speaker 2: Matlab backend se aa raha hai, aur woh, aur woh dynamic hai ki main jahan bhi jaun, woh uske hisab se change kar raha hai.
-Speaker 1: Toh data bhi.
-Speaker 2: Data mein maine us samay, jaise main example ke taur pe HTML maine open kiya, inspect karke maine us samay Google ko google hi kar diya, just because, hai na, toh woh data maine us samay uska change kiya, at that instant, toh woh static change hua. Toh I am giving example before of frappe and code.
-Speaker 1: But static kaise raha? Jab change hi aapne kar diya, toh woh toh dynamic ho gaya.
-Speaker 2: main five, karunga, gayab ho jayega.
-Speaker 1: are, just example.
-Speaker 2: Static kya hota hai?
-Speaker 1: If I write something, a dashboard code, in my JS, JS file, in repository, jab tak tere paas access nahi aayega, koi aur example hai.
-Speaker 2: Session for debate.
-Speaker 1: Yes, for the room, please. Not for each other.
-Speaker 2: haan, but yeah, so data and code ki line jo banegi, wo mere hisaab se ye banegi ki data would be more, more static form, and code would be more dynamic form.
-Speaker 1: sone wala hai. achha nahi laga usko. What would, what about to you would be a line?
-Speaker 1: It is static and dynamic.
-Speaker 2: matlab data jo work karta hai, wo aapke information aur values ke upar work karta hai.
-Speaker 1: Yes. And the code?
-Speaker 2: Instructions ki kis tarike se hame kaam karna hai.
-Speaker 1: Yes. I would say that. Yes.
-Speaker 1: Anyone else has? ho gaya.
-Speaker 1: Code are capabilities. Data is a repository.
-Speaker 1: Very easy to understand. ghar me aapke utensils wagera hain, micro hai, wo code hai.
-Speaker 2: Code.
-Speaker 1: tum khana bana rahe ho, kal thook rahe ho, jo bhi kar rahe ho, uske sath pata nahi, thookte to nahi ho khane ko, but let's not get into that. What you do with that is data. It is very important to understand because in a lot of organizations, data and, so in a lot of programming language, the code acts sometimes like data, data sometimes acts like code.
-Speaker 1: But that does not change the definition. For example, in frappe, ye fixtures jo bolte hain, it is technically stored in the database.
-Speaker 1: In all the definitions of the world, it is data.
-Speaker 2: Data.
-Speaker 1: Yes. But it is not data. It is a fixture.
-Speaker 1: It means it is a form. Means it's a capability.
-Speaker 1: It increases the capability for me to define that Brahmjyot is male, whatever. Definition deta hai mujhe.
-Speaker 1: Right. But when it comes to data, it is very simply just a data point in capability ke andar maine.
-Speaker 1: In a way, it is the proof that the capability is being utilized. Data in essence cannot be stored without code.
-Speaker 1: Code is, because code is capability. And as a, we think code is C++, we think code is Java.
-Speaker 1: Code is not C++. Code is not Java.
-Speaker 2: Yes.
-Speaker 1: nahi hota. Matlab isliye toh engineers jo aake hume bolte hain na ki bhai tum coding nahi kar rahe. I'm sorry, but aap log bhi toh do language me coding karte ho.
-Speaker 1: There are gazillion languages in the world. Excel for code se ek is a language.
-Speaker 1: Language. Today you are coding if you are sitting and making that a formula crap.
-Speaker 1: A lot of us used to do in college, I don't know how much of you worked too much on Excel, but you were coding. You were using, it's, what is the Excel ka language?
-Speaker 1: Graph query. Kuch toh bolte ho usko.
-Speaker 1: usko bhi ek language bolte hain. You were coding.
-Speaker 1: EI also what you are writing today in English. If you are changing the capability of something from X to Y, you are coding.
-Speaker 1: But why that matters is, it's very important for us to understand this line because jab aap debugging kar rahe ho, aapko ye samajhna hai. Jab let me now put it in practical use.
-Speaker 1: Now for example, Akshat, how will you decide ek bug aaya hai, and how will you decide if it's a code issue or a data issue? Based on this definition.
-Speaker 2: thoda paani.
-Speaker 1: khaa liye.
-Speaker 2: thoda.
-Speaker 1: chahiye paani?
-Speaker 2: le liya.
-Speaker 2: So when I first come, let's suppose the issue comes, firstly I will check through the capabilities, the code configurations for it. ki it's a config issue or it's basically handling the code.
-Speaker 2: Data pe hum isliye nahi kar sakte kyunki data will be changed. Ya data is not the thing which helps us to identify that is the issue.
-Speaker 2: Because data toh ek practical, it's just only a number. But the code and configurations which is written it will help us to understand this is an issue or this basically a thing jiski wajah se data mein kuch changes aaye hain.
-Speaker 2: Toh main toh code capabilities se identify karunga.
-Speaker 1: Capabilities. Now let me expand into the third domain, then we will get into this debugging. Because aaj ka pura target hamara hai that you understand the three fences.
-Speaker 1: Taaki jab bhi aapko koi issue aaye, you are very sure kaun sa, matlab kisme se kaun wale mein aata hai. Not today's call output is not ki iske through phir aur kaise debug karna hai.
-Speaker 1: Today's main is fundamental, means these are fundamentals. So we have understood data, we have understood code.
-Speaker 1: Infra if you want to give a guess, if I define house, Sanjay, jaise maine house ka bhi example diya, utensils are the code, microwave is the code, and the data is, uh, pizzas or burger or whatever you make, and whatever comes out of it. What is infra in this definition?
-Speaker 2: Bricks. In terms of.
-Speaker 1: Bricks are pieces of the infra, I would agree. But what would be infra? If Sanjay, you would want to give a guess.
-Speaker 2: Structure of the house.
-Speaker 1: Organizational structure. Yes. Bechare ne Sanjay ko bolne nahi diya.
-Speaker 1: Woh ek shabd bolne se pehle teen log bol diye.
-Speaker 1: So infra is very simply jo abhi aapne microwave banaya. Agar aapko yaad hai, apne ghar mein ek microwave aisi jagah mein daalti hai mummy, jahan the wall is like this, sorry, my house was majorly designed by my mom.
-Speaker 1: I say mummy. If you see the wall thoda aise andar jaata hai, it's like agar aapke ek pillar hai, then a wall, and then you put the fridge or a microwave in this side.
-Speaker 1: So the structure is complementing the capability or rather agar aap sach mein socho, structure pehle se hi bana hai. Capabilities ko aap fit karte ho according to the structure.
-Speaker 1: It can happen either or. And that's it.
-Speaker 1: Technology truth also. Regardless of whether code came first or infra came first, each other has to complement.
-Speaker 1: Ye nahi ho sakta, for example, aapne, because I know this conversation, this word has come to all of you, aapne aap media store kar rahe ho apne code mein, photos, videos, but you do not have S3.
-Speaker 1: Sitting and storing it in the database will break.
-Speaker 2: Where are you storing the data?
-Speaker 1: You're putting the fridge on top of the table. It's not like table will not hold. One day table will break.
-Speaker 2: To infra wahi ho gaya na jahan pe aap store karte ho data ko aur code ko. Agar.
-Speaker 1: Yes.
-Speaker 2: Simple like that.
-Speaker 1: Yes. Exactly.
-Speaker 2: Cooking example mein bahut simple.
-Speaker 1: So now having this understanding, I want us to, because we are, I think ten minutes to go, right? I want to majorly lead into Q&As and summation here. Now, if a issue comes to you, keep this example in mind, because you want a standard rule amongst all of us.
-Speaker 1: How will you define whether it's an infra issue, whether it's a code issue or a data issue? Functionally, give me an answer.
-Speaker 1: Do not say JS and scripts and queries. That's not the point.
-Speaker 1: Because the issue can be Arch Excel, the issue can be kal aapki mummy ka Google nahi chal raha. It can be mgrand issues, and it can be something as simple as Lipl HRMS.
-Speaker 1: But today we are figuring out how do you debug. Jo ye bolte hain na debug karna, if the bug is also very code, how do you deduce at what layer is the issue?
-Speaker 1: Anyone wants to give a try? Yes.
-Speaker 2: How I identify the issue is, sabse pehle main us environment mein hi dekhta hoon ki us data check to hai. Suppose client bolta hai ki is dashboard mein.
-Speaker 1: I will, I will give a challenge. I do not want a technical answer. I want a functional answer.
-Speaker 1: Aap mujhe logically batao, bina text shabd use kiye.
-Speaker 2: I am out. Agar platform mein koi issue hai toh infra ke through hoga.
-Speaker 1: Text shabd use kiya aapne.
-Speaker 2: Nahi, platform.
-Speaker 1: Agar koi medium mein koi issue hai.
-Speaker 2: Let's take an example of cooking, thik hai? If I am cooking, let's say chicken, if I am cooking chicken in microwave, thik hai? Agar mere microwave mein defect aata hai, thik hai?
-Speaker 2: Toh woh infra ka issue hota hai. Agar meri cooking instructions mein likh kar aati hai ki maine.
-Speaker 1: Aapko toh pata hai already. I am saying how would you deduce?
-Speaker 2: Agar chicken nahi kharab.
-Speaker 1: How would you figure out?
-Speaker 2: Data kharab hai. Chicken kharab hai toh mera data kharab hai. Agar mujhe khana hi maine galat banaya toh mera code toh kharab.
-Speaker 1: Are, woh kuch aur pooch rahe hain. Woh debugging pooch rahe hain.
-Speaker 2: Chicken kharab hai is the issue.
-Speaker 1: Haan.
-Speaker 2: Chicken kiski wajah se kharab hai?
-Speaker 1: Kharab hai.
-Speaker 2: Ki tu jis se laya hai woh usse.
-Speaker 1: usse.
-Speaker 2: Chicken galat tha yaar. microwave mein kharabi hai ya jahan tum usko ghusa diye, wire hi nahi dale, usmein kharabi hai.
-Speaker 1: How do you deduce this issue is infra or code or data? If you see today.
-Speaker 2: ye keh raha hai mera man kar raha hai.
-Speaker 1: man kar raha hai.
-Speaker 2: main keh raha hoon shraak chal raha hai, mat khao. baap dada mare nahi.
-Speaker 2: shraak chal raha hai.
-Speaker 1: Today if you see.
-Speaker 2: ek urgent hai.
-Speaker 1: haan, today if you see the biggest problem which we have is half the time is spent here. hum log ek ko batate hain, wo dusre dusre ko batata hai, teesre teesre ko batata hai. hum sab yahi figure out karte rehte hain ki ismein se kya issue hai.
-Speaker 1: phir baat hoti hai, tab pata chalta hai ismein se kya. phir aage baat banti hai.
-Speaker 1: And if you see this and this have very straightforward fixes. Only this generally takes a bit of time.
-Speaker 1: But hum to 50% time goes into this. In fact, I've seen a lot of people find an issue here, solved here.
-Speaker 1: And then say ki bhai ye ye hat gaya.
-Speaker 2: picture nahi hai.
-Speaker 1: haan. So it is very important for us to understand how to deduce. Now we will go into each one in depth.
-Speaker 1: Data kya hai, data parent-child kya hota hai, wo sab ghusenge hum ek-ek karke. But sabse pehle functionally, if someone can give a try, there's no problem, my job to give the answer.
-Speaker 1: How would you deduce infra hai ya code hai ya data hai? Is it the dhancha, is it the capability, or is it the unit?
-Speaker 1: Give a guess. It can be wrong.
-Speaker 1: There is no problem. After this, it's just going to be wrong.
-Speaker 1: This is the place where you can be wrong.
-Speaker 2: Kahan wala thing sound nahi aa raha? Data matlab.
-Speaker 1: Upar se.
-Speaker 2: Abhi infra.
-Speaker 1: Main bolta hoon, let's say aapko koi, you got an issue. Now what questions would you ask me to figure out ye teeno mein se kismein aata hai? Maine bola bhai mera, matlab let me be a client, mera output nahi chal raha.
-Speaker 1: Now what are the questions you will ask me? Mera output table nahi chal raha.
-Speaker 2: Kya nahi chal raha?
-Speaker 1: Pehle chal raha tha.
-Speaker 2: Kya nahi chal raha tha?
-Speaker 1: Pehle chal raha tha.
-Speaker 2: pehle chal raha tha.
-Speaker 1: matlab main answer nahi bol raha.
-Speaker 2: nahi, pehle chal raha tha.
-Speaker 1: How would you deduce? What questions would you ask? Understand.
-Speaker 2: Output table mein kya data aapko nahi mil raha?
-Speaker 1: pehle to ye nahi poochte.
-Speaker 2: pehle kyon?
-Speaker 1: ye to aap bhi to yahi poochte ho, pehle chal raha tha ye.
-Speaker 2: ye client se nahi poochenge na? client ko pehle poochenge.
-Speaker 1: Client? Main client ko thodi bataunga debug kar raha hoon. Any question?
-Speaker 1: What questions would you ask? One is, pehle chal raha tha.
-Speaker 1: mera pehla question dekho yahi aata hai, migration issue kya hai?
-Speaker 2: aapka pehla issue kya hai?
-Speaker 1: Issue kya hai?
-Speaker 2: Issue kya hai?
-Speaker 1: mera output table nahi chal raha.
-Speaker 2: Output table bahut hai 12 minat.
-Speaker 1: haan, we are done in 23 minutes.
-Speaker 2: toh aapka output table mein kya nahi aa raha hai? data nahi aa raha hai, fluctuation aa raha hai.
-Speaker 1: ya table hi nahi aa raha hai.
-Speaker 2: Data aa raha hai.
-Speaker 1: are woh keh rahe hain output, output tab hai, woh tha, ab woh nahi hai. ab batao. nahi chal raha.
-Speaker 1: I'm not saying tha ya nahi tha.
-Speaker 2: nahi chal raha.
-Speaker 1: I'll ask what aapko kya dikh raha hai, what is the issue that is you are giving.
-Speaker 2: I will not be giving an answer. I'm just trying to get the questions.
-Speaker 1: haan.
-Speaker 2: We are trying to solve your problem actually.
-Speaker 1: We don't solve our problem.
-Speaker 2: What questions? Any other?
-Speaker 1: Maybe one is a time range question. Was it working before? Is it working now?
-Speaker 1: One is a question on.
-Speaker 2: Data.
-Speaker 1: Data mein koi galti hai kya?
-Speaker 2: matlab mera to pehla question yahi rehta hai, agar wo pehle chal raha hoga to. Agar main us picture se chalun aur ab wo nahi chal raha hai. Koi naya code gaya hai migration ki wajah se.
-Speaker 1: That is history. Noted.
-Speaker 2: My question is ki, okay, ki output mein it can be ki entire module is not coming aur output mein you are not able to link it. So that is the only, that's the question. What kind of problem are you facing?
-Speaker 1: Let me put it in three ranges. Because in the interest of time, this question is in three places.
-Speaker 2: I'll also ask you what platform.
-Speaker 1: Let me bring it in three ways.
-Speaker 2: Network.
-Speaker 1: Network. One is, kya outcome table dikh raha hai aapko?
-Speaker 2: Haan.
-Speaker 1: First, can you see the other tables? Or can you only see this one? Now in this one, can you see this table in other projects?
-Speaker 1: Or only this? And the last one, let's, which you will have, ismein are the numbers coming the way it should.
-Speaker 1: 1, 2, 3 defines whether it's infra, whether it's code, whether it is data. This is, it's a very, very simple version.
-Speaker 1: You guys will face tougher problems in this. But this is a very clean segregation.
-Speaker 1: And you have to realize, kuch bhi technical kar rahe ho, apne ya to AI ke sath, or with a client requirement, or with a client issue. Whether it's a feature, whether it's a defect request, whether it's a change request, whether it's something coming in in Browne.
-Speaker 1: You have to first define kisme se kis-kis, there are 13 tasks. Which one is this task, which one is this task, which one is this task.
-Speaker 1: And each one will have a different way of tackling. The way we tackle each is what we'll have some focus session on.
-Speaker 1: But today's focus is on this. Please go and work on this with your AI.
-Speaker 1: Please, please, please। Because ये तो हम सब mix करते हैं।
-Speaker 1: Bhai, maine aaj raat ko mix kiya tha. Main bhi nahi, everyone also.
-Speaker 1: We keep mixing this। ये बताओ, the only reason we don't mix this is because हमारे पास है ही नहीं।
-Speaker 1: Ye bhi kar rahe hote hain hum. Hum dalte hain S3 ke sath, kisi ne ek aur dal diya hota hai Azure ka blog.
-Speaker 1: Do cheezein chal rahi hoti hain wahan.
-Speaker 2: Main bhi yahi keh raha tha, last wale se to kuch nahi hai.
-Speaker 1: But I know, I know a lot of people who come out and say, ye to infra issue. And it's very clearly, bhai, it is other output tables are working. It's only one output table and the person is coming into infra issue.
-Speaker 1: Can't you see the other output table? So deduction is very important.
-Speaker 1: The word for it is deduction. Please ensure we follow this going forward.
-Speaker 1: I think we'll have one more session next week. Not one more, we'll have many more.
-Speaker 1: Very sorry. But I would want to keep, there is a request ki maybe we have workshops or debates.
-Speaker 1: I would want all of you to reach out to Nandita to have a discussion. I want that more of these sessions are things which you guys are interested in.
-Speaker 1: Rather than something we set up. Just put those ideas across.
-Speaker 1: And we'll ensure that if it's a specific niche session, we get people who know that topic. Okay?
-Speaker 1: Got it? Okay.
-Speaker 1: In case people who have any questions can step back. Others please.
-Speaker 2: Right.
-Speaker 1: Feel free to start. Thank you so much.
-Speaker 2: Are yaar, mere ko kaam dete hain.
-</script>
 
 <script>
 (function () {
@@ -1121,29 +615,6 @@ Speaker 2: Are yaar, mere ko kaam dete hain.
     });
   });
 
-  // ---------- transcript ----------
-  var raw = document.getElementById('transcriptSrc').textContent.trim().split('\n');
-  var lines = raw.map(function (l) {
-    var m = l.match(/^Speaker\s+(\d+):\s*(.*)$/);
-    return m ? { lead: m[1] === '1', t: m[2].trim() } : { lead: false, t: l.trim() };
-  }).filter(function (x) { return x.t; });
-  var list = document.getElementById('trList'), count = document.getElementById('trCount'), search = document.getElementById('trSearch');
-  function esc(s) { return s.replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
-  function render(q) {
-    q = (q || '').trim().toLowerCase();
-    var re = q ? new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi') : null;
-    var html = '', n = 0;
-    lines.forEach(function (l) {
-      if (q && l.t.toLowerCase().indexOf(q) === -1) return;
-      n++;
-      var t = esc(l.t); if (re) t = t.replace(re, '<mark>$1</mark>');
-      html += '<div class="tr-line' + (l.lead ? ' lead' : '') + '"><div class="spk">' + (l.lead ? 'Lead' : 'Room') + '</div><div class="txt">' + t + '</div></div>';
-    });
-    list.innerHTML = html || '<div class="tr-line"><div class="spk"></div><div class="txt">No lines match.</div></div>';
-    count.textContent = q ? n + ' matching lines' : lines.length + ' lines';
-  }
-  var tmr; search.addEventListener('input', function () { clearTimeout(tmr); tmr = setTimeout(function () { render(search.value); }, 120); });
-  render('');
 })();
 </script>
 <script src="../assets/sessions.js"></script>
