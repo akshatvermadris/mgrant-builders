@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 1. Change N and the title -->
+<title>Session N — Title | mGrant Builders</title>
+<meta name="description" content="One-sentence summary of the session.">
+<link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<!-- 2. data-page must match the file name AND the slug in assets/sessions.js -->
+<body data-root="../" data-page="session-N.html" data-toc>
+
+<aside class="sidebar"></aside>
+
+<div class="main"><div class="content">
+
+<div class="page-header">
+  <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="index.html">Sessions</a> / Session N</div>
+  <h1>Session Title Goes Here<span>.</span></h1>
+  <div class="page-meta">Session N &middot; Day, DD Month YYYY &middot; HH:MM &middot; NN min</div>
+  <p class="page-lede">One paragraph: what this session was about and why it matters.</p>
+</div>
+
+<!-- Each <section id="..." data-nav="..."> appears automatically in the sidebar "On this page" list. -->
+
+<section id="covered" data-nav="What we covered">
+  <h2>What We Covered</h2>
+  <div class="prose"><p>Short summary of the session.</p></div>
+  <div class="outcomes">
+    <h3>What We Aligned On</h3>
+    <ul>
+      <li>Outcome one</li>
+      <li>Outcome two</li>
+    </ul>
+  </div>
+</section>
+
+<section id="topic-1" data-nav="Topic one">
+  <h2>Topic One</h2>
+  <div class="prose"><p>Explain the idea.</p></div>
+  <div class="quote">"A memorable line from the session."<cite>Said in the session</cite></div>
+  <div class="analogy"><div class="label">Think of it this way</div><p>An analogy.</p></div>
+  <div class="callout accent"><p><strong>Rule of thumb:</strong> the practical takeaway.</p></div>
+</section>
+
+<section id="takeaways" data-nav="Key takeaways">
+  <h2>Key Takeaways</h2>
+  <div class="n"><i>1</i><p><strong>Takeaway.</strong> Why it matters.</p></div>
+  <div class="n"><i>2</i><p><strong>Takeaway.</strong> Why it matters.</p></div>
+</section>
+
+<section id="next" data-nav="Next steps">
+  <h2>Next Steps</h2>
+  <div class="n"><i class="accent">&rarr;</i><p><strong>Owner:</strong> action.</p></div>
+</section>
+
+<div id="pager"></div>
+
+<div class="main-footer">
+  <span>mGrant Builders &middot; Dhwani RIS</span>
+  <span>Session N &middot; Title &middot; Date</span>
+</div>
+
+</div></div>
+
+<script src="../assets/sessions.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>
