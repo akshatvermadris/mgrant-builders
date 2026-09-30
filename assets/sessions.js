@@ -24,6 +24,7 @@ window.MGB_SESSIONS = [
     short: 'Tech Fundamentals',
     title: 'Tech Fundamentals: the Terminal, Vibe Coding & the Three Layers',
     date: 'Wed, 30 Sep 2026',
+    duration: '52 min',
     status: 'done',          // 'done' | 'upcoming'
     latest: true,
     recording: 'https://dhwaniris1-my.sharepoint.com/personal/nandita_sharma_dhwaniris_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fnandita%5Fsharma%5Fdhwaniris%5Fcom%2FDocuments%2FRecordings%2FmGrant%20Builders%20%20Tech%20Fundamentals%20Session%2D20260930%5F110716%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb402aeb9%2Db54e%2D4538%2Db8fb%2D16d507f40eaf',

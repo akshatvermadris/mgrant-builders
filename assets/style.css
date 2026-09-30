@@ -468,7 +468,7 @@ details.sidebar-group[open] > summary { background: var(--accent-bg); }
 
 .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--text-light); margin: 0 0 14px; }
 
-.home-nav { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 4px 0 36px; }
+.home-nav { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 4px 0 36px; }
 .home-nav-card {
   display: block; position: relative; padding: 26px 28px 24px; border: 1px solid var(--rule); border-radius: 14px;
   text-decoration: none; color: inherit; background: var(--card-bg); transition: transform .18s, box-shadow .18s, border-color .18s; overflow: hidden;
@@ -575,3 +575,27 @@ a.s-row:hover .s-title { color: var(--accent); }
 .qa-a { font-size: 13.5px; color: var(--text-mid); line-height: 1.6; }
 .qa-a strong { color: var(--text); }
 @media (max-width: 900px) { .qa-list { grid-template-columns: 1fr; } }
+
+/* Recordings page */
+.rec-grid { display: flex; flex-direction: column; gap: 14px; margin-bottom: 20px; }
+.rec-card { display: grid; grid-template-columns: 280px 1fr; gap: 22px; padding: 16px; border: 1px solid var(--rule); border-radius: 14px; background: var(--card-bg); align-items: center; }
+.rec-card.pending { border-style: dashed; background: transparent; }
+.rec-thumb { position: relative; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; display: flex; align-items: center; justify-content: center; text-decoration: none;
+  background: radial-gradient(circle at 78% 72%, #D4842A 0 14%, transparent 15%), linear-gradient(135deg, #8B1A1A, #5E1010); }
+.rec-card.pending .rec-thumb { background: repeating-linear-gradient(135deg, rgba(128,128,128,.08) 0 10px, rgba(128,128,128,.03) 10px 20px); }
+.rec-thumb-num { position: absolute; top: 10px; left: 12px; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 28px; font-weight: 600; color: rgba(255,255,255,.9); line-height: 1; }
+.rec-card.pending .rec-thumb-num { color: var(--text-light); }
+.rec-thumb-play { width: 54px; height: 54px; border-radius: 50%; background: rgba(255,255,255,.95); color: #8B1A1A; display: flex; align-items: center; justify-content: center; font-size: 18px; padding-left: 4px; transition: transform .15s; box-shadow: 0 6px 20px rgba(0,0,0,.25); }
+.rec-card.pending .rec-thumb-play { background: var(--card-bg); color: var(--text-light); padding-left: 0; box-shadow: none; border: 1px solid var(--rule); }
+a.rec-thumb:hover .rec-thumb-play { transform: scale(1.08); }
+.rec-thumb-dur { position: absolute; bottom: 8px; right: 10px; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; background: rgba(0,0,0,.6); color: #fff; padding: 2px 7px; border-radius: 4px; }
+.rec-meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-light); display: flex; align-items: center; gap: 8px; }
+.rec-meta .sc-badge { font-family: 'Space Grotesk', sans-serif; font-size: 8.5px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 2px 7px; border-radius: 3px; background: var(--accent); color: #fff; }
+.rec-info h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 26px; font-weight: 600; color: var(--primary); line-height: 1.15; margin: 4px 0 6px; }
+.rec-card.pending .rec-info h3 { color: var(--text-mid); }
+.rec-info p { font-size: 13.5px; color: var(--text-mid); line-height: 1.55; max-width: 560px; }
+.rec-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 4px; }
+.rec-notes { font-size: 13px; font-weight: 700; color: var(--accent); text-decoration: none; margin-top: 14px; }
+.rec-notes:hover { text-decoration: underline; }
+.rec-soon { font-size: 12.5px; color: var(--text-light); font-style: italic; margin-top: 12px; }
+@media (max-width: 760px) { .rec-card { grid-template-columns: 1fr; gap: 14px; } }

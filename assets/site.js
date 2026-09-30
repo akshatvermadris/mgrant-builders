@@ -33,6 +33,7 @@
 
   html += '<div class="sidebar-section">' +
     '<a class="sidebar-link' + (PAGE === 'index' ? ' current' : '') + '" href="' + R + 'index.html"><span class="link-icon">~</span> Home</a>' +
+    '<a class="sidebar-link' + (PAGE === 'recordings' ? ' current' : '') + '" href="' + R + 'recordings.html"><span class="link-icon">&#9654;</span> Recordings</a>' +
     '</div>';
 
   html += '<details class="sidebar-group"' + (groupOpen ? ' open' : '') + '><summary><span class="link-icon">S</span> Sessions' +
@@ -141,6 +142,28 @@
         '<div class="s-num">' + s.num + '</div>' +
         '<div><div class="s-title">' + esc(s.title) + '</div><div class="s-desc">' + esc(s.summary) + '</div></div>' +
         '<div class="s-date">' + esc(s.date) + '</div></' + tag + '>';
+    }).join('');
+  }
+
+  var recGrid = document.getElementById('recGrid');
+  if (recGrid) {
+    recGrid.innerHTML = S.map(function (s) {
+      var has = s.status === 'done' && s.recording;
+      return '<div class="rec-card' + (has ? '' : ' pending') + '">' +
+        '<' + (has ? 'a href="' + esc(s.recording) + '" target="_blank" rel="noopener"' : 'div') + ' class="rec-thumb">' +
+          '<span class="rec-thumb-num">S' + s.num + '</span>' +
+          '<span class="rec-thumb-play">' + (has ? '&#9654;' : '&#8987;') + '</span>' +
+          (s.duration ? '<span class="rec-thumb-dur">' + esc(s.duration) + '</span>' : '') +
+        '</' + (has ? 'a' : 'div') + '>' +
+        '<div class="rec-info">' +
+          '<div class="rec-meta">Session ' + s.num + ' &middot; ' + esc(s.date) + (s.latest ? ' <span class="sc-badge">Latest</span>' : '') + '</div>' +
+          '<h3>' + esc(s.title) + '</h3>' +
+          '<p>' + esc(s.summary) + '</p>' +
+          '<div class="rec-actions">' +
+            (has ? '<a class="watch-btn" href="' + esc(s.recording) + '" target="_blank" rel="noopener"><span>&#9654;</span> Watch recording</a>' : '<span class="rec-soon">Recording will appear here after the session</span>') +
+            (s.status === 'done' ? '<a class="rec-notes" href="' + href(s) + '">Read notes &rarr;</a>' : '') +
+          '</div>' +
+        '</div></div>';
     }).join('');
   }
 
